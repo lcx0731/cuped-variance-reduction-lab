@@ -1,0 +1,126 @@
+{
+  "design": {
+    "source": "deterministic synthetic randomized experiments",
+    "seed": 20260929,
+    "n_replicates_per_correlation": 4000,
+    "n_units_per_experiment": 800,
+    "true_treatment_effect": 0.2,
+    "post_treatment_shift": 0.5,
+    "pre_outcome_correlations": [
+      0.0,
+      0.3,
+      0.6,
+      0.8
+    ]
+  },
+  "results": [
+    {
+      "correlation": 0.0,
+      "method": "unadjusted",
+      "bias": 0.0006449937010316598,
+      "empirical_sd": 0.07237729263659347,
+      "variance_ratio": 1.0,
+      "coverage_95": 0.94425,
+      "power": 0.804
+    },
+    {
+      "correlation": 0.0,
+      "method": "cuped_pre",
+      "bias": 0.0005901972265753008,
+      "empirical_sd": 0.07239816562525775,
+      "variance_ratio": 1.000576865967184,
+      "coverage_95": 0.944,
+      "power": 0.805
+    },
+    {
+      "correlation": 0.0,
+      "method": "bad_control_post",
+      "bias": 0.00021888941364955894,
+      "empirical_sd": 0.07414203886414547,
+      "variance_ratio": 1.0493597013351565,
+      "coverage_95": 0.945,
+      "power": 0.7835
+    },
+    {
+      "correlation": 0.3,
+      "method": "unadjusted",
+      "bias": 0.0008742071104463067,
+      "empirical_sd": 0.07113225773857891,
+      "variance_ratio": 1.0,
+      "coverage_95": 0.94425,
+      "power": 0.819
+    },
+    {
+      "correlation": 0.3,
+      "method": "cuped_pre",
+      "bias": 0.0008265411679593271,
+      "empirical_sd": 0.06747873925660654,
+      "variance_ratio": 0.8999134293068838,
+      "coverage_95": 0.948,
+      "power": 0.84575
+    },
+    {
+      "correlation": 0.3,
+      "method": "bad_control_post",
+      "bias": -0.11891819173302552,
+      "empirical_sd": 0.069738258200114,
+      "variance_ratio": 0.961189472253522,
+      "coverage_95": 0.60075,
+      "power": 0.215
+    },
+    {
+      "correlation": 0.6,
+      "method": "unadjusted",
+      "bias": -0.0008319124492859875,
+      "empirical_sd": 0.07082274944446229,
+      "variance_ratio": 1.0,
+      "coverage_95": 0.949,
+      "power": 0.803
+    },
+    {
+      "correlation": 0.6,
+      "method": "cuped_pre",
+      "bias": -0.0018033386320987221,
+      "empirical_sd": 0.0571122812950885,
+      "variance_ratio": 0.6502995456234794,
+      "coverage_95": 0.9435,
+      "power": 0.935
+    },
+    {
+      "correlation": 0.6,
+      "method": "bad_control_post",
+      "bias": -0.2411183126047723,
+      "empirical_sd": 0.06132237075080811,
+      "variance_ratio": 0.7497082805104585,
+      "coverage_95": 0.0245,
+      "power": 0.1035
+    },
+    {
+      "correlation": 0.8,
+      "method": "unadjusted",
+      "bias": -0.0005673203923370063,
+      "empirical_sd": 0.07109311250459457,
+      "variance_ratio": 1.0,
+      "coverage_95": 0.951,
+      "power": 0.80525
+    },
+    {
+      "correlation": 0.8,
+      "method": "cuped_pre",
+      "bias": -0.00014349738678534618,
+      "empirical_sd": 0.04225362464878802,
+      "variance_ratio": 0.35324244601265536,
+      "coverage_95": 0.9505,
+      "power": 0.995
+    },
+    {
+      "correlation": 0.8,
+      "method": "bad_control_post",
+      "bias": -0.3201288414703537,
+      "empirical_sd": 0.05111275996829286,
+      "variance_ratio": 0.5168965199194754,
+      "coverage_95": 0.0,
+      "power": 0.65225
+    }
+  ]
+}
